@@ -1,10 +1,23 @@
-@keyframes changeColorYear {
-    from{
-        color:red;
+@keyframes changeColor {
+    100%{
+        color: pink;
         opacity: 0.7;
         
     }
-    to {
+    80%{
+        color: blue;
+    }
+    60%{
+         color: lime;
+    }
+    40%{
+color: yellow;
+    }
+    20%{
+        color: orange;
+    }
+    0% {
+        color: aqua;
         opacity: 1;
        
     }
@@ -69,35 +82,16 @@ body {
 .banner {
     text-align: center;
     font-family: "Satisfy";
-    background: linear-gradient(
-            to right,
-            red,
-            green,
-            blue,
-            lime,
-            cyan,
-            yellow,
-            orange,
-            aqua
-    );
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    animation: gradient 2s linear infinite;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #00ff00;
+  
 }
 
 .bg__icon{
-    background: linear-gradient(
-            to right,
-            red,
-           pink,
-           deeppink
-    );
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    animation: gradient 2s linear infinite;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #00ff00;
+
 }
-
-
 @keyframes gradient {
     50% {
         filter: hue-rotate(360deg);
