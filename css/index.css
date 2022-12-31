@@ -19,11 +19,18 @@ body{
     letter-spacing: 5px;
     animation: changeColor 10s infinite;
 }
+.volumn,
+.muted {
+    position: absolute;
+    z-index: 9;
+    color: white;
+    bottom: 0;
+}
 .content{
     font-size: 2rem;
     opacity: 0.7;
     color: pink;
-     text-shadow: 2px 2px 10px #cc0000 !important
+     text-shadow: 2px 2px 10px #cc0000 !important       
 }
 .main{
     background-image: url("https://hinhanhdephd.com/wp-content/uploads/2019/02/hinh-nen-phao-hoa-dong-gif-11.gif");
