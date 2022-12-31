@@ -45,7 +45,7 @@
 	<script src="js/jquery.countdown.min.js"></script>
 	<script>
 		$(document).ready(function () {
-			var breXit = moment.tz("2022-12-31 17:47:00", "Asia/Ho_Chi_Minh");
+			var breXit = moment.tz("2022-12-31 18:00:00", "Asia/Ho_Chi_Minh");
 			console.log(breXit.toDate());
 			$('#clock').countdown(breXit.toDate(), function (event) {
 				var result = event.elapsed;
