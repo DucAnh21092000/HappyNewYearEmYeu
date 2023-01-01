@@ -9,11 +9,16 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 		</script>
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/stylexit.css">
 	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
+		integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -38,9 +43,12 @@
 			</div>
 			<audio src="./y2mate.com - AN VŨ  Full Công Chúa Bong Bóng  St Nguyễn Hoàng Linh  New Version.mp3"
 				class="audio" autoplay loop></audio>
-				<i class="fas fa-2x fa-volume-up volumn" onclick="openVolumn()"></i>
-				<i class="fas fa-volume-mute muted fa-2x" onclick="muted()"></i>
+
 		</div>
+	</div>
+	<div>
+		<i class="fas fa-2x fa-volume-up volumn" onclick="openVolumn()"></i>
+		<i class="fas fa-volume-mute muted fa-2x" onclick="muted()"></i>
 	</div>
 	<script src="js/jquery.webticker.min.js" type="text/javascript"></script>
 	<script src="js/simple-rss.js"></script>-->
@@ -51,7 +59,8 @@
 	<script>
 
 		$(document).ready(function () {
-			var breXit = moment.tz("2023-01-01 00:00:00", "Asia/Ho_Chi_Minh");
+			var breXit = moment.tz("2023-01-01 21:45:00", "Asia/Ho_Chi_Minh");
+			console.log(moment.tz.names());
 			console.log(breXit.toDate());
 			$('#clock').countdown(breXit.toDate(), function (event) {
 				var result = event.elapsed;
