@@ -19,11 +19,35 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
 		integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+		<link href="./css/index.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="./css/animation.css" class="">
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Satisfy" />
+		<link rel="stylesheet" href="./css/libs/animate.css" />
+		<link rel="stylesheet" href="./css/site.css" />
+	<style>
+		.content__noClick {
+			background-color: pink;
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+	</style>
 </head>
 
 <body>
-
+	<div class="noClick">
+		<div class="content__noClick d-flex justify-content-center align-content-center flex-column">
+			<div class="content__main mb-2" style="font-size: 22px;">
+				𝕭𝖊́ 𝖎𝖚 𝖈𝖚̉𝖆 𝖆𝖓𝖍 𝖉𝖆̃ 𝖘𝖆̆̃𝖓 𝖘𝖆̀𝖓𝖌 𝖈𝖍𝖚̛𝖆 𝖓𝖆̀𝖔!
+			</div>
+			<div class="content__btn">
+			   <input name="btn__ready" id="" class="btn btn-primary" type="button" onclick="ready()" value="Có. Sẵn sàng rồi 😘">
+				<input name="" id="" class="btn btn-primary" type="button" value="Không. Nghỉ đi 😒">
+			</div>
+		</div>
+	</div>
 	<div class="everything ">
 		<div class="container">
 			<div>
@@ -41,31 +65,43 @@
 
 				</div>
 			</div>
-			<audio src="./y2mate.com - AN VŨ  Full Công Chúa Bong Bóng  St Nguyễn Hoàng Linh  New Version.mp3"
+			<audio src="./tet_binh_an_tet_la_tet_sum_vay_remix_orinn_remix_hana_cam_tien_nhac_tet_remix_hot_tiktok_2023_-3877833837480115764.mp3"
 				class="audio" autoplay loop></audio>
 
 		</div>
 	</div>
-	<div>
-		<i class="fas fa-2x fa-volume-up volumn" onclick="openVolumn()"></i>
-		<i class="fas fa-volume-mute muted fa-2x" onclick="muted()"></i>
+	<canvas id="canvas" class="d-none">
+	Canvas không hổ trợ trình duyệt của bạn.
+	</canvas>
+	<div class="root w-100 ">
+		<div class="d-flex w-100 justify-content-center flex-column align-items-center pt-5 ">
+			<div class="wow bounceInUp" data-wow-delay="2s" data-wow-duration="5s">
+				<div class="banner year"></div>
+			</div>
+			<div class="wow slideInLeft" data-wow-delay="7s" data-wow-duration="4s">
+				<div class="banner content"></div>
+			</div>
+			<div class="banner mess"></div>
+			<div class="bg__icon icon text-center "></div>
+		</div>
 	</div>
-	<script src="js/jquery.webticker.min.js" type="text/javascript"></script>
-	<script src="js/simple-rss.js"></script>-->
-	<script src="js/moment.min.js"></script>
-	<script src="js/moment-timezone-with-data.min.js"></script>
-	<script src="js/jquery.countdown.min.js"></script>
-	<script src="./js/audio.js"></script>
+	
+
 	<script>
 
 		$(document).ready(function () {
-			var breXit = moment.tz("2023-01-01 21:45:00", "Asia/Ho_Chi_Minh");
-			console.log(moment.tz.names());
-			console.log(breXit.toDate());
+			var breXit = moment.tz("2023-01-21 20:38:00", "Asia/Ho_Chi_Minh");
+			var canvas = document.querySelector('#canvas')
+			var everything = document.querySelector('.everything')
+			var audio = document.querySelector('.audio')
+			
 			$('#clock').countdown(breXit.toDate(), function (event) {
 				var result = event.elapsed;
 				if (result) {
-					window.location.replace('./happyNewYear.html')
+					everything.classList.add('d-none')
+					canvas.classList.remove('d-none')
+					display()
+					audio.src = 'https://pic.pikbest.com/17/97/21/79v888piCusf.mp3'
 				}
 
 
@@ -87,6 +123,31 @@
 			});
 
 		});
+	</script>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+		</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+		</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+		</script>
+	<script src="https://cdn.jsdelivr.net/npm/fireworks-js@latest/dist/fireworks.js"></script>
+	<script src="./dist/wow.min.js"></script>
+	<script src="./dist/wow.js"></script>
+	<script type="text/javascript" src="./js/main.js"> </script>
+	<script type="text/javascript" src="./js/animation.js"> </script>
+		<script src="js/jquery.webticker.min.js" type="text/javascript"></script>
+		<script src="js/simple-rss.js"></script>
+		<script src="js/moment.min.js"></script>
+		<script src="js/moment-timezone-with-data.min.js"></script>
+		<script src="js/jquery.countdown.min.js"></script>
+		<script src="./js/audio.js"></script>
+	<script>
+		new WOW().init();
 	</script>
 </body>
 

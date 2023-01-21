@@ -33,6 +33,7 @@ color: yellow;
        
     }
 }
+
 .animation1{
     animation: changeColorYear 5s infinite ;
 }

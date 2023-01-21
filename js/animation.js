@@ -7,9 +7,10 @@ let initialValue = {
     year: "2023",
     content: "Happy New Year !!",
     icon: " ❤❤❤❤",
-    mess: "Chúc mừng năm mới bé yêu ! /" +
-        "Chúc bé năm mới vui vẻ, luôn mỉm cười, gặp nhiêu may mắn trong cuộc sống,"
-        + "/ Yêu anh nhiều hơn. Anh yêu em  ❤️ "
+    mess: "Chúc mừng năm mới bé yêu! /" +
+        "Chúc bé năm mới vui vẻ, luôn mỉm cười, gặp nhiều thành công trong cuộc sống."
+        +"/ Cùng nhau khắc phục những gì chưa tốt nhé,hạ cái tôi xuống, bớt nóng giận, lắng nghe nhau nhiều hơn,..."
+        + "/ Hi vọng em sẽ yêu và quan tâm anh nhiều hơn. Anh yêu em ❤️ "
 
 }
 
@@ -95,4 +96,4 @@ function display() {
 
 
 }
-display()
+
