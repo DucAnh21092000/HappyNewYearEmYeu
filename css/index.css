@@ -4,9 +4,8 @@ body {
 
 .root {
     position: absolute;
-    top: 30%;
-    bottom: 50%;
     z-index: 5;
+    height: 100vh;
 }
 
 #canvas {
@@ -91,6 +90,6 @@ canvas {
 }
 
 .mess {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     animation: changeColor 10s infinite;
 }
